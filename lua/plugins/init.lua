@@ -10,13 +10,13 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
-        -- defaults 
+        -- defaults
         "vim",
         "lua",
         "vimdoc",
         "markdown",
 
-        -- web dev 
+        -- web dev
         "html",
         "css",
         "javascript",
@@ -33,8 +33,12 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "lua-language-server", "stylua",
-        "html-lsp", "css-lsp" , "prettier",
+        "lua-language-server",
+        "stylua",
+        "html-lsp",
+        "css-lsp",
+        "prettier",
+        "templ",
         "gopls",
       },
     },
@@ -46,8 +50,6 @@ return {
       require "configs.lspconfig"
     end,
   },
-
-
 
   -- These are some examples, uncomment them if you want to see them work!
   -- {
