@@ -18,6 +18,8 @@ return {
 
         -- web dev
         "html",
+        "templ",
+        "htmx",
         "css",
         "javascript",
         "typescript",
@@ -40,6 +42,8 @@ return {
         "prettier",
         "templ",
         "gopls",
+        "htmx-lsp",
+        "tailwindcss-language-server",
       },
     },
   },
