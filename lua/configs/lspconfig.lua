@@ -12,7 +12,7 @@ local servers = {
     filetypes = { "html", "tmpl" },
   },
   pyright = {},
-  tmpl = {},
+  templ = {},
   tsserver = {},
   htmx = {
     filetypes = { "html", "templ" },
@@ -21,7 +21,7 @@ local servers = {
     filetypes = { "templ", "javascript", "typescript", "react" },
   },
   gopls = {
-    file_types = { "go", "gomod", "gowork", "gotmpl" },
+    filetypes = { "go", "gomod", "gowork", "gotmpl" },
     root_dir = util.root_pattern("go.work", "go.mod", ".git"),
     settings = {
       gopls = {
@@ -35,10 +35,10 @@ local servers = {
 }
 
 -- lsps with default config
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    on_init = on_init,
-    capabilities = capabilities,
-  }
+for name, opts in pairs(servers) do
+  opts.on_attach = on_attach
+  opts.on_init = on_init
+  opts.capabilities = capabilities
+
+  lspconfig[name].setup(opts)
 end
