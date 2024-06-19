@@ -19,7 +19,6 @@ return {
         -- web dev
         "html",
         "templ",
-        "htmx",
         "css",
         "javascript",
         "typescript",
@@ -44,6 +43,8 @@ return {
         "gopls",
         "htmx-lsp",
         "tailwindcss-language-server",
+        "typescript-language-server",
+        "pyright",
       },
     },
   },
