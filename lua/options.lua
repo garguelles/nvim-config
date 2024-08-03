@@ -8,4 +8,4 @@ vim.filetype.add { extension = { templ = "templ" } }
 vim.wo.wrap = false
 
 -- bun hot reload fix
-vim.opt_local.backupcopy = "yes"
+vim.o.backupcopy = "yes"
