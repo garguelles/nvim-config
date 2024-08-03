@@ -6,3 +6,6 @@ require "nvchad.options"
 -- o.cursorlineopt ='both' -- to enable cursorline!
 vim.filetype.add { extension = { templ = "templ" } }
 vim.wo.wrap = false
+
+-- bun hot reload fix
+vim.opt_local.backupcopy = "yes"
