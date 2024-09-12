@@ -49,6 +49,7 @@ return {
         "typescript-language-server",
         "pyright",
         "solidity-ls",
+        "biome",
       },
     },
   },
