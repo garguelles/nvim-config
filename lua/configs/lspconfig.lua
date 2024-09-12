@@ -32,6 +32,7 @@ local servers = {
       },
     },
   },
+  solidity = {},
 }
 
 -- lsps with default config

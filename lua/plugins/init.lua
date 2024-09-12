@@ -27,6 +27,9 @@ return {
         -- backend
         "go",
         "python",
+
+        -- web3
+        "solidity",
       },
     },
   },
@@ -45,6 +48,7 @@ return {
         "tailwindcss-language-server",
         "typescript-language-server",
         "pyright",
+        "solidity-ls",
       },
     },
   },

@@ -1,8 +1,10 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    go = {"gofmt", "golines", "goimports"}
-     -- css = { "prettier" },
+    go = { "gofmt", "golines", "goimports" },
+    ts = { "biome-check" },
+    javascript = { "biome-check", "prettier", stop_after_first = true },
+    -- css = { "prettier" },
     -- html = { "prettier" },
   },
 
@@ -14,7 +16,7 @@ local options = {
 }
 
 require("conform").formatters.golines = {
-  prepend_args = {"-m", "128"}
+  prepend_args = { "-m", "128" },
 }
 
 require("conform").setup(options)
