@@ -3,9 +3,9 @@ local options = {
     lua = { "stylua" },
     go = { "gofmt", "golines", "goimports" },
     ts = { "biome-check" },
-    javascript = { { "biome", "prettier" } },
-    typescript = { { "biome", "prettier" } },
-    typescriptreact = { { "biome", "prettier" } },
+    javascript = { "biome", "prettier", stop_after_first = true },
+    typescript = { "biome", "prettier", stop_after_first = true },
+    typescriptreact = { "biome", "prettier", stop_after_first = true },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
@@ -21,4 +21,4 @@ require("conform").formatters.golines = {
   prepend_args = { "-m", "128" },
 }
 
-require("conform").setup(options)
+return options
