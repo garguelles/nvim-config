@@ -13,7 +13,7 @@ local servers = {
   },
   pyright = {},
   templ = {},
-  tsserver = {},
+  ts_ls = {},
   htmx = {
     filetypes = { "html", "templ" },
   },
