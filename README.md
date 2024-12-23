@@ -19,9 +19,10 @@
    git clone https://github.com/garguelles/nvim-config ~/.config/nvim && nvim
    ```
 
-3. Set up Vim alias (add to your ~/.bashrc or ~/.zshrc):
+3. Set up Vim alias and add ANTHROPIC_API_KEY (add to your ~/.bashrc or ~/.zshrc):
    ```bash
    alias vim='nvim'
+   export ANTHROPIC_API_KEY='...'
    ```
    Then reload your shell:
    ```bash
