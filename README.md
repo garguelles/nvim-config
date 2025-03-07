@@ -16,7 +16,7 @@
 
 2. Clone the configuration:
    ```bash
-   git clone https://github.com/garguelles/nvim-config ~/.config/nvim && nvim
+   git clone git@github.com:garguelles/nvim-config.git ~/.config/nvim && nvim
    ```
 
 3. Set up Vim alias and add ANTHROPIC_API_KEY (add to your ~/.bashrc or ~/.zshrc):
